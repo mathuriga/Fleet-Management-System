@@ -14,14 +14,14 @@ font-size:14px;
 <div id="logo"><a href="#/index.html"></a></div>
 	  <table id="main" border="0" cellpadding="0" cellspacing="0" width="600"> 
       <tbody><tr> 
-        <td id="leftside" valign="top"> <div id="map" style="width: 600px; height: 400px; border:#990000 solid 2px;"></div>
+        <td id="leftside" valign="top"> <div id="map" style="width: 600px; height: 400px; border:#000080 solid 2px;"></div>
           <br>
           <br>
 <div id="controls">
  <form onSubmit="start();return false" action="#">
   <table width="539" border="0" align="center">
     <tr>
-      <td colspan="3" bgcolor="#D29C1A">&nbsp;</td>
+      <td colspan="3" bgcolor="#000080">&nbsp;</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
@@ -62,18 +62,18 @@ font-size:14px;
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td colspan="3" bgcolor="#D29C1A">&nbsp;</td>
+      <td colspan="3" bgcolor="#000080">&nbsp;</td>
       </tr>
   </table>
 </form>
 </div>
 <div class="miles">
-<font color="#FF0000"><center>
+<font color="#FFFFFF"><center>
  <div id="step">&nbsp;</div>
     <div id="distance">Miles: 0.00</div>
 						</center></font></div>									
         </p></td>
-        <td bordercolor="#FFFFFF" id="rightside" valign="top">&nbsp;</td> 
+        <td bordercolor="#000080" id="rightside" valign="top">&nbsp;</td> 
       </tr> 
     </tbody></table> 
     
@@ -108,7 +108,7 @@ font-size:14px;
       function animate(d) {
         if (d>eol) {
           document.getElementById("step").innerHTML = "<b>Trip completed<\/b>";
-          document.getElementById("distance").innerHTML =  "Miles: "+(d/1609.344).toFixed(2);
+          document.getElementById("distance").innerHTML =  "Miles: "+((d/1609.344)/0.62137119).toFixed(2);
           return;
         }
         var p = poly.GetPointAtDistance(d);
@@ -117,7 +117,7 @@ font-size:14px;
           k=0;
         }
         marker.setPoint(p);
-        document.getElementById("distance").innerHTML =  "Miles: "+(d/1609.344).toFixed(2)+speed;
+        document.getElementById("distance").innerHTML =  "Kilometers: "+((d/1609.344)/0.62137119).toFixed(2)+speed;
         if (stepnum+1 < dirn.getRoute(0).getNumSteps()) {
           if (dirn.getRoute(0).getStep(stepnum).getPolylineIndex() < poly.GetIndexAtDistance(d)) {
             stepnum++;

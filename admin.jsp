@@ -7,14 +7,20 @@ String upass = request.getParameter("Password");
 if(uname != null && upass != null) {
 try{
 	Class.forName("com.mysql.jdbc.Driver");
-	c = DriverManager.getConnection("jdbc:mysql://localhost:3306/vdb","root","");
+	c = DriverManager.getConnection("jdbc:mysql://localhost:3306/vdb","root","123");
+        System.out.println("Error occured1");
 	String sql = "select uname, upass from admin_user where uname='"+uname+"' and upass = '"+upass+"'";
+        System.out.println("Error occured2");
 	Statement st = c.createStatement();
+        System.out.println("Error occured3");
 	ResultSet rs= st.executeQuery(sql);
 	if(rs.next()){
 		op="YES";
+                System.out.println("Error occured4");
 		session.setAttribute("content_page","content.jsp");
+                System.out.println("Error occured5");
 		response.sendRedirect("template.jsp");
+                System.out.println("Error occured6");
 	}else {
 		op="NO";
 	}

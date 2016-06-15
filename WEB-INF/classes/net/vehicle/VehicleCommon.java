@@ -80,7 +80,7 @@ public class VehicleCommon {
 		ArrayList all=new ArrayList();
 		Connection c=null;
 		try {
-			String sql=" select f_type,sum(qty),sum(cost) from fuel_details group by f_type order by f_type";
+			String sql=" select f_type,sum(qty),sum(cost) from fuel_details group by f_type order by sum(qty)";
 			c = DBConnect.prepareConn();
     		Statement st=c.createStatement();
 			ResultSet rs =st.executeQuery(sql);
@@ -567,4 +567,29 @@ System.out.println("error 5");
 		}
 		return one;
 	}//viewAllFuelDetails
+        
+        public static ArrayList getAdmin() {
+		ArrayList one=new ArrayList();
+		Connection c=null;
+		try {
+			String sql="SELECT * FROM admin_user" ;
+			c = DBConnect.prepareConn();
+    		Statement st=c.createStatement();
+			ResultSet rs =st.executeQuery(sql);
+			while(rs.next()) {
+				one.add(rs.getString(2));
+				one.add(rs.getString(3));
+				
+			}
+			DBConnect.closeConn(c);    
+		}
+		catch (Exception ex) {
+			System.out.println (ex);
+		}
+		return one;
+	}//viewAllFuelDetails
+        
+        
+        
+        
 }
