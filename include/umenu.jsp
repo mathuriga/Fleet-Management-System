@@ -22,9 +22,9 @@ String uid = (String)session.getAttribute("u_id");
 			<li><a href="do?MOD=BOK&ACT=Car">Map Lookup</a></li>
 			<li><a href="do?MOD=BOK&ACT=View&v=lux">Luxury Cars</a></li>
 			<li><a href="do?MOD=BOK&ACT=View&v=exe">Executive Cars</a></li>
-			<li><a href="do?MOD=BOK&ACT=View&v=muv">MUV's & SUV's</a></li>
+			<li><a href="do?MOD=BOK&ACT=View&v=muv">Pick up</a></li>
 			<li><a href="do?MOD=BOK&ACT=View&v=eco">Economy Cars</a></li>
-			<li><a href="do?MOD=BOK&ACT=View&v=mini">Vans & Bus</a></li>			
+			<li><a href="do?MOD=BOK&ACT=View&v=mini">Mini Vans & Large Coaches</a></li>			
 		  </ul>
 	 	  <div class="menutitle">&nbsp;</div>	
 	</div>
