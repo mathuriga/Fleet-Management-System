@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-Apr-2016, 19:39:02
+    Author     : Mathu
+*/
+
+*{
+    margin: 0px;
+    padding:0px;
+    
+}
+
+html{
+    background-image: url(adminbg.jpg);
+}
+
+body{
+    background: silver;
+    height:900px;
+    width:800px;
+    margin:0 auto;
+}
+
+h3{
+    color:black;
+    text-align: center;
+    padding-top: 25px;
+    font-family: arial;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+#header{
+    background:#ccccff;
+    height:200px;
+    width:100%;
+}
+
+#container{
+    background:white;
+    height:670px;
+    width:100%;
+}
+
+#logotxt{
+    width:25%;
+    height:200px;
+    background: silver;
+    float: left;
+}
+
+#logo{
+    width:75%;
+    height:200px;
+    
+    float:right;
+}
+
+#logotxt h1{
+   color: black;
+   font-family: Imprint MT Shadow;
+   padding-top:27px;
+   padding-left: 5px;
+}
+
+#imglogo{
+    
+   padding-top:35px;
+   padding-left: 90px;
+}
+
+#Registration{
+    min-height: 350px;
+    width: 500px;
+    margin-left: 160px;
+    margin-top: 5px;
+}
+
+
+
+#Registration tr td{
+   padding: 10px;
+   
+}

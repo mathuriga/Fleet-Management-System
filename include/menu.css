@@ -1,0 +1,65 @@
+#ddblueblockmenu {
+	border: 1px solid;
+	border-bottom-width: 0;
+	width: 200px;
+}
+
+#ddblueblockmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font: normal 90% 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+	
+}
+
+#ddblueblockmenu li a{
+	
+	display: block;
+	height:20px;
+	padding: 3px 0;
+	padding-left: 9px;
+	width: 198px; /*185px minus all left/right paddings and margins*/
+	text-decoration: none;
+	//color: #b0cce9;
+	//background-color: #b0cce9;
+	//border-bottom: 1px solid #b0cce9;
+	border-left: 7px solid #000080;
+}
+
+
+
+#ddblueblockmenu li a:hover {
+	background-color:#000080;
+	border-left-color: #64d1;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:underline;
+	border-bottom: 2px  solid #FFFFFF;
+	border-top: 2px solid #FFFFFF;
+}
+
+#ddblueblockmenu div.menutitle{
+	color: white;
+	border-bottom: 1px solid black;
+	padding: 1px 0;
+	padding-left: 5px;
+	background-color: #000080;
+	font: bold 90% 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif;
+}
+a:link {
+	color: #000080;
+	  font-weight : bold;
+
+}
+
+a:visited {
+  color: #f9f8f4;
+    text-decoration: underline;
+	  font-weight : bold;
+}
+
+a:hover {
+  color: #000080;
+	text-decoration: none;
+}
+
